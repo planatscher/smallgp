@@ -8,7 +8,7 @@ means of lines of code and memory usage. It has been originally developed as an 
 for the "Tiny GP"-Coding-Contest at the Genetic and Evolutionary 
 Computation Conference 2004. 
 
-It is old code buit still working. For the mirgration to Github I have added the functionality that formula are written in Excel format.
+It is old code but still working. For the mirgration to Github I have added the functionality that formula are written in Excel format.
 
 # Usage
 
