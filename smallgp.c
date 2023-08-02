@@ -148,7 +148,7 @@ static void printtreexl(struct node *n, int indent) {
                 if (n->no >= DIMENSION) {
                         printf("%f", constants[n->no - DIMENSION]);
                 } else {
-                        printf("A%i", n->no + 1); 
+                        printf("A%i", n->no + DIMENSION); 
                 }  
     }
 }
