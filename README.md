@@ -5,12 +5,15 @@ Symbolic regression is a process of finding a mathematical formula that best fit
 # Introduction
 
 SmallGP is a implementation of Symbolic Regression which is compact by 
-means of lines of code and memory usage. Population sizes of hundred of of thousands or millions of inidivuals are possible.
+means of lines of code and memory usage. 
+
+- Population sizes of hundreds of thousands or millions of inidivuals are possible.
+- Functions are restricted to +,-,*,/
+- Consists of just 1 C-file without non-standard dependencies
+- outputs formulas in Excel-format: just copy&paste (check out video)
+- should compile on Linux, MacOS & Windows 
 
 [![Video](https://img.youtube.com/vi/krNsDzarpoY/maxresdefault.jpg)](https://www.youtube.com/watch?v=krNsDzarpoY)
-
-
-It is old code but still working. For the migration to Github I have added the functionality that formula are written in Excel format.
 
 # Usage
 
@@ -18,26 +21,29 @@ SmallGP is a commandline-tool. All important parameters can be changed easily.
 
 Display the help with
 
+```
 > smallgp -h
-
+```
 to learn which parameters are avaiable.
 
 Example parameters for a test run:
 
-dataset: 		test.data
-population size: 	10000
-tournament size:	100
+```
+dataset: 		problem.data
+population size: 	100000
+tournament size:	500
 maximum generations:	80
 maximum prog. length: 	50
 maximum depth:		7
 #constants: 		200
 Pcross:			0.7
 Pmut/Node:		0.1
+```
 
 To start smallgp with these parameters just run
-
-> smallgp -i test.data -p 10000 -t 100 -g 80 -l 50 -d 7 -r 200 -c 0.7 -m 0.1
-
+```
+> smallgp -i test.data -p 100000 -t 500 -g 80 -l 50 -d 7 -r 200 -c 0.7 -m 0.1
+```
 . 
 Warning: Parameters are not checked for validity (ex. negative 
 probabilities etc.).  	
