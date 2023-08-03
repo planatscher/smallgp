@@ -235,7 +235,7 @@ int main(int argc, char *argv[]) {
     struct node *actphenotype = NULL;
     struct node *prevphenotype = NULL;
     char reached = 0;  
-    printf("SmallGP V 1.1 by Hannes Planatscher\nFree Software under GNU General Public License \n\n");
+    printf("SmallGP V 1.1 MIT License \n\n");
     while ((c = getopt (argc, argv, "l:p:d:g:c:m:t:s:i:b:f:r:n:e:h")) != -1) 
       switch (c) {
 		case 'l': MAX_LEN = atoi(optarg); break;
@@ -251,7 +251,7 @@ int main(int argc, char *argv[]) {
 		case 'r': NCONSTANTS = atoi(optarg);  break;
 		case 'e': PTERMREALLY = atof(optarg); break;
 		case 'n': CONSTANTRANGE = atof(optarg); break;
-		case 'h': printf("usage: smallgp [options]\n\noptions:\n\n\t-l\tmaximum program size\n\t-p\tpopulationsize\n\t-d\tmaximal initialization depth\n\t-g\tmax.generations\n\t-c\tprobability of crossover\n\t-m\tprobability of mutation per node \n\t-t\ttournament size\n\t-s\trandom seed\n\t-i\tinputfile (default:problem.data)\n\t-f\tlower bound for fitness\n\t-r\tnumber of random constants\n\t-n\tconstant range (+/-)\n\t-e\tgrow/full scaling (1.0 = grow)\n\t-h\tprints this help-message\n\nReport bugs to hannes@planatscher.net\n"); return 1;       	
+		case 'h': printf("usage: smallgp [options]\n\noptions:\n\n\t-l\tmaximum program size\n\t-p\tpopulationsize\n\t-d\tmaximal initialization depth\n\t-g\tmax.generations\n\t-c\tprobability of crossover\n\t-m\tprobability of mutation per node \n\t-t\ttournament size\n\t-s\trandom seed\n\t-i\tinputfile (default:problem.data)\n\t-f\tlower bound for fitness\n\t-r\tnumber of random constants\n\t-n\tconstant range (+/-)\n\t-e\tgrow/full scaling (1.0 = grow)\n\t-h\tprints this help-message\n"); return 1;       	
 		case '?': fprintf (stderr,"\nType 'smallgp -h' (without quotes) to get help on smallgp.\n\n"); exit(0);
 		default: abort ();
       }        
