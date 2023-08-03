@@ -1,6 +1,10 @@
 # smallgp.c
 A small implementation of symbolic regression / genetic programming in C
 
+
+[![Video](https://img.youtube.com/vi/krNsDzarpoY/maxresdefault.jpg)](https://www.youtube.com/watch?v=krNsDzarpoY)
+
+
 # Introduction
 
 SmallGP is a implementation of Symbolic Regression which is compact by 
