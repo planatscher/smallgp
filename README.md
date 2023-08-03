@@ -1,14 +1,14 @@
 # smallgp.c
-A small implementation of symbolic regression / genetic programming in C
 
-
-[![Video](https://img.youtube.com/vi/krNsDzarpoY/maxresdefault.jpg)](https://www.youtube.com/watch?v=krNsDzarpoY)
-
+Symbolic regression is a process of finding a mathematical formula that best fits a given set of data points without assuming a specific form or structure for the equation
 
 # Introduction
 
 SmallGP is a implementation of Symbolic Regression which is compact by 
-means of lines of code and memory usage. 
+means of lines of code and memory usage. Population sizes of hundred of of thousands or millions of inidivuals are possible.
+
+[![Video](https://img.youtube.com/vi/krNsDzarpoY/maxresdefault.jpg)](https://www.youtube.com/watch?v=krNsDzarpoY)
+
 
 It is old code but still working. For the migration to Github I have added the functionality that formula are written in Excel format.
 
