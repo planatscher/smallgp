@@ -42,7 +42,7 @@ Pmut/Node:		0.1
 
 To start smallgp with these parameters just run
 ```
-> smallgp -i test.data -p 100000 -t 500 -g 80 -l 50 -d 7 -r 200 -c 0.7 -m 0.1
+> smallgp -i problem.data -p 100000 -t 500 -g 80 -l 50 -d 7 -r 200 -c 0.7 -m 0.1
 ```
 . 
 Warning: Parameters are not checked for validity (ex. negative 
