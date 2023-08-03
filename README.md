@@ -46,7 +46,43 @@ To start smallgp with these parameters just run
 ```
 . 
 Warning: Parameters are not checked for validity (ex. negative 
-probabilities etc.).  	
+probabilities etc.).
+
+Input file format is:
+```
+<Dimension of the problem>
+<number of fitness cases>
+x1 y1
+...	
+```
+An example of a one-dimensional problem with 20 fitness-cases:
+
+```
+1
+20
+1	1
+0.9	0.9
+0.8	0.8
+0.7	0.7
+0.6	0.6
+0.5	0.5
+0.4	0.4
+0.3	0.3
+0.2	0.2
+0.1	0.1
+0	0
+-0.1	0.1
+-0.2	0.2
+-0.3	0.3
+-0.4	0.4
+-0.5	0.5
+-0.6	0.6
+-0.7	0.7
+-0.8	0.8
+-0.9	0.9
+-1	1
+```
+
 
 # Implementation Details
 
