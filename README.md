@@ -8,9 +8,7 @@ A small implementation of symbolic regression / genetic programming in C
 # Introduction
 
 SmallGP is a implementation of Symbolic Regression which is compact by 
-means of lines of code and memory usage. It has been originally developed as an entry 
-for the "Tiny GP"-Coding-Contest at the Genetic and Evolutionary 
-Computation Conference 2004. 
+means of lines of code and memory usage. 
 
 It is old code but still working. For the migration to Github I have added the functionality that formula are written in Excel format.
 
