@@ -1,8 +1,6 @@
 # smallgp.c
 
-Symbolic regression is a process of finding a mathematical formula that best fits a given set of data points without assuming a specific form or structure for the equation
-
-# Introduction
+Symbolic regression is a process of finding a mathematical formula that best fits a given set of data points without assuming a specific form or structure for the equation. 
 
 SmallGP is a implementation of Symbolic Regression which is compact by 
 means of lines of code and memory usage. 
