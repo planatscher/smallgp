@@ -30,14 +30,16 @@ void readFile(char *filename) {
 	printf("Error opening file...\n");
 	exit(0);
     } else {
-	int i = 0;
-	fscanf(inputfile, "%i", &DIMENSION);
-	fscanf(inputfile, "%i", &FITNESSCASES);
-	input = (float *) malloc((DIMENSION + 1) * FITNESSCASES * sizeof(float));
-	while (!feof(inputfile)) {
-	    fscanf(inputfile, "%f", &input[i]);
-	    i++;
-	}
+        int i = 0;
+        fscanf(inputfile, "%i", &DIMENSION);
+        fscanf(inputfile, "%i", &FITNESSCASES);
+        input = (float *) malloc((DIMENSION + 1) * FITNESSCASES * sizeof(float));
+        for (i = 0; i < (DIMENSION + 1) * FITNESSCASES; i++) {
+            if (fscanf(inputfile, "%f", &input[i]) != 1) {
+                fprintf(stderr, "Error reading data from file\n");
+                exit(1);
+            }
+        }
     }
     fclose(inputfile);
 }
